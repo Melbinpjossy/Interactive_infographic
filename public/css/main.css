@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* ----- custom font ----- */
+@font-face {
+	font-family: 'Yeon Sung', cursive;
+   /* font-family: 'GOT_font';
+    src: url('Game_of_Thrones.ttf') format('truetype');*/
+    font-weight: normal;
+    font-style: normal;
+}
+/* ----- end custom font ----- */
+
+/* ----- default styles ----- */
+body { background-image:url(../images/bg.jpg);
+	background-repeat:no-repeat; background-position:center center;
+	background-color:#000000; font-size:16px; }
+
+#introText
+{
+	margin-bottom: : 20px;
+	position: relative;
+	color: red;
+	opacity: 70%;
+}
+
+h1 {
+	font-family: 'Yeon Sung', cursive;
+	color:red;
+	margin-top:30px;
+	margin-bottom: 30px;
+	font-size:50px;
+}
+
+main {
+	position:relative;
+	width:100%;
+	text-align:center;
+	top:30px;
+}
+
+#imageContainer {
+	width:620px;
+	height:370px;
+	background-color:grey;
+	margin:0 auto;
+	overflow:hidden;
+	border-radius: 50px; 
+}
+
+#killerImages { position:relative; width:5200px; transition: all .5s;}
+#killerImages img { float:left;}
+
+#bottomNav { margin-top:30px; }
+
+#navList li {
+	display:inline;
+	list-style-type:none;
+	padding:0px 10px;
+	cursor:pointer;
+}
+
+/* ----- end default styles ----- */
+
+/* ----- image sprite ----- */
+.sigil-container {
+	width:51px;
+	height:54px;
+	display:inline-block;
+	overflow:hidden;
+	background-image:url(../images/killers.png);
+	background-repeat:no-repeat;
+	transition:transform .3s;
+	-webkit-transition:-webkit-transform .3s;
+	-moz-transition:-moz-transform .3s;
+}
+
+.harry { background-position:0px -54px; }
+.harry:hover { background-position:0px 0px; }
+
+.andrei { background-position:-50.5px -54px; }
+.andrei:hover { background-position:-51px 0px; }
+
+.jeffrey { background-position:-101px -54px; }
+.jeffrey:hover { background-position:-101px 0px; }
+
+.luis { background-position:-152px -54px; }
+.luis:hover { background-position:-152px 0px; }
+
+.scaleUp {
+	-moz-transform:scale(1.7, 1.7);
+	-webkit-transform:scale(1.7, 1.7);
+	transform:scale(1.7, 1.7);
+}
+
+.scaleHalfUp {
+	-moz-transform:scale(1.2, 1.2);
+	-webkit-transform:scale(1.2, 1.2);
+	transform:scale(1.2, 1.2);
+}
+
+/* add styles here for lightbox and video */
+.lightbox
+{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.9);
+	display: none;
+
+}
+
+.lightbox-on {
+	display: block;
+}
+
+
+
+.lightbox-close {
+	position: absolute;
+	color: white;
+	right: 12px;
+	top: 12px;
+	cursor: pointer;
+	font-size: 2em;
+}
+.killer-name {
+	font-size: 2.5rem;
+	letter-spacing: 1px;
+	margin-top: 60px; 
+}
+
+.killer-info {
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	font-size: 1.5rem;
+	margin: 20px auto 0 auto;
+	width: 70%;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	text-align: left;
+
+}

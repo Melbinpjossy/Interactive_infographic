@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Serial Killers of History</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+
+        <section>
+            <div id="introText">
+                <h1>Serial Killers of History</h1>
+            </div>
+        </section>
+
+    <section id="imageContainer">
+    	<div id="killerImages" style="right: 0"> <!-- add in all of the images to make a scrolling banner -->
+    		<img src="images/harry.jpg"/>
+            <img src="images/andrei.jpg"/>
+            <img src="images/jeffrey.jpg"/>
+            <img src="images/luis.jpg"/>
+        </div>
+    </section>
+
+    <nav id="bottomNav">
+    	<ul id="navList">
+        	<!-- custom data attribute, allowing to pass custom data https://developer.mozilla.org/en/docs/Web/API/HTMLElement/dataset -->
+            <li><div class="sigil-container harry" data-offset="0"></div></li>
+            <li><div class="sigil-container andrei" data-offset="1"></div></li>
+            <li><div class="sigil-container jeffrey" data-offset="2"></div></li>
+            <li><div class="sigil-container luis" data-offset="3"></div></li>
+            
+            
+        </ul>
+    </nav>
+    
+    <!-- replace this with the house name -->
+    <h1 class="killer-name"></h1>
+    
+    <!-- replace this with house details (github gist) -->
+    <p class="killer-info">
+        <!-- replace this text with dynamic data -->
+    </p>
+</main>  <!--end mainContainer-->
+<!-- Add a light box here -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
